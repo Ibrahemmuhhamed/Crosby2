@@ -1,0 +1,89 @@
+.ani-num {
+    display: flex;
+}
+
+.zero {
+    width: 200px;
+    height: 300px;
+    background-color: transparent;
+    border: 40px solid rgb(255, 255, 255);
+    box-sizing: border-box;
+    position: relative;
+}
+.zero::after {
+    position: absolute;
+    content: '';
+    background-color: #f1c50e;
+    width: 30px;
+    right: -35px;
+    top: -35px;
+    height: 30px;
+    animation-name: box;
+    animation-duration: 10s;
+    opacity: 0;
+/* animation-delay: 10s; */
+animation-iteration-count: infinite;
+}
+@keyframes box { 
+1% {
+    opacity: 1;
+}
+    10% {
+        transform: translateY(260px);
+        opacity: 1;
+    }
+20% {
+    transform: translateY(260px) translateX(-160px);
+    opacity: 1;
+    }
+   30% {
+        transform: translateY(0) translateX(-160px);
+        opacity: 1;
+        }
+        40% {
+        transform: translateY(0) translateX(0);
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+
+}
+    
+
+
+.one {
+    position: relative;
+    width: 180px;
+    height: 300px;
+}
+
+.one-1 {
+    width: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+}
+.one-2 {
+    position: absolute;
+    background: rgb(255, 255, 255);
+    width: 130px;
+    bottom: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    height: 35px;
+}
+.one-3 {
+    width: 35px;
+    height: 80px;
+    position: absolute;
+    top: 13px;
+    left: 29%;
+    transform: rotate(45deg) translateX(-50%);
+    background-color: rgb(255, 255, 255);
+}
